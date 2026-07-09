@@ -27,7 +27,7 @@ const navigationLinks = [
   { href: "/formacao", label: "Formação" },
   { href: "/profissional", label: "Profissional" },
   { href: "/projetos", label: "Projetos" },
-  { href: "#contato", label: "Contato" },
+  { href: "/contato", label: "Contato" },
 ];
 
 export default function MainLayout({ children }: MainLayoutProps) {
@@ -108,7 +108,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
             {/* Social Links */}
             <div className="flex items-center gap-4">
               <a
-                href="https://linkedin.com/in/joao-cordeiro"
+                href="https://linkedin.com/in/joao-a-cordeiro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg hover:bg-muted transition-colors"
@@ -117,7 +117,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
                 <Linkedin className="w-5 h-5 text-muted-foreground hover:text-foreground" />
               </a>
               <a
-                href="https://github.com/joao-cordeiro"
+                href="https://github.com/JoaoAc05"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg hover:bg-muted transition-colors"
@@ -126,7 +126,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
                 <Github className="w-5 h-5 text-muted-foreground hover:text-foreground" />
               </a>
               <a
-                href="mailto:joao@example.com"
+                href="mailto:joaoalvescordeiro2005@gmail.com"
                 className="p-2 rounded-lg hover:bg-muted transition-colors"
                 title="Email"
               >

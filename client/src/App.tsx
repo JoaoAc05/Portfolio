@@ -10,6 +10,7 @@ import Formacao from "./pages/Formacao";
 import Profissional from "./pages/Profissional";
 import Projetos from "./pages/Projetos";
 import ProjetoDetalhes from "./pages/ProjetoDetalhes";
+import Contato from "./pages/contato.tsx";
 
 /**
  * App Router
@@ -31,6 +32,7 @@ function Router() {
         <Route path={"/profissional"} component={Profissional} />
         <Route path={"/projetos"} component={Projetos} />
         <Route path={"/projetos/:id"} component={ProjetoDetalhes} />
+        <Route path={"/contato"} component={Contato} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />

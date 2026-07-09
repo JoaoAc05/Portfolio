@@ -55,15 +55,13 @@ export default function Home() {
             <div className="bg-muted/50 border border-border rounded-lg p-6 space-y-3">
               <p className="font-semibold text-foreground">Filosofia de Trabalho</p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Acredito que bom código backend é invisível ao usuário final, mas
-                fundamental para experiência de qualidade. Busco sempre entender o
-                problema de negócio antes de implementar soluções técnicas.
+                Trabalho com foco em organização, colaboração e melhoria contínua, utilizando a tecnologia para desenvolver soluções robustas, eficientes e orientadas às necessidades dos usuários.
               </p>
             </div>
 
             {/* CTA Button */}
             <div className="flex gap-4 pt-4">
-              <a href="#contato" className="inline-block">
+              <a href="/contato" className="inline-block">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                   Entrar em Contato
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -81,7 +79,7 @@ export default function Home() {
 
           {/* Right: Profile Image Placeholder */}
           <div className="flex justify-center">
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 flex items-center justify-center border border-border">
+            <div className="w-64 h-64 md:w-100 md:h-100 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/20 flex items-center justify-center border border-border">
               <img
                 src={profileImage}
                 alt="Imagem de Perfil"
@@ -276,7 +274,7 @@ export default function Home() {
 
             <div className="space-y-4">
               <a
-                href="https://linkedin.com/in/joao-cordeiro"
+                href="https://www.linkedin.com/in/joao-a-cordeiro/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-blue-600/50 hover:bg-muted/50 transition-all group"
@@ -287,13 +285,13 @@ export default function Home() {
                 <div>
                   <p className="font-semibold text-foreground">LinkedIn</p>
                   <p className="text-sm text-muted-foreground">
-                    linkedin.com/in/joao-cordeiro
+                    linkedin.com/in/joao-a-cordeiro
                   </p>
                 </div>
               </a>
 
               <a
-                href="https://github.com/joao-cordeiro"
+                href="https://github.com/JoaoAc05/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-blue-600/50 hover:bg-muted/50 transition-all group"
@@ -304,13 +302,13 @@ export default function Home() {
                 <div>
                   <p className="font-semibold text-foreground">GitHub</p>
                   <p className="text-sm text-muted-foreground">
-                    github.com/joao-cordeiro
+                    github.com/JoaoAc05
                   </p>
                 </div>
               </a>
 
               <a
-                href="mailto:joao@example.com"
+                href="mailto:joaoalvescordeiro2005@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-blue-600/50 hover:bg-muted/50 transition-all group"
               >
                 <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-900/50 transition-colors">
@@ -318,7 +316,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">Email</p>
-                  <p className="text-sm text-muted-foreground">joao@example.com</p>
+                  <p className="text-sm text-muted-foreground">joaoalvescordeiro2005@gmail.com</p>
                 </div>
               </a>
             </div>

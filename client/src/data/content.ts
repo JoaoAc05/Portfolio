@@ -71,35 +71,34 @@ export interface Project {
 export const educationData: Education[] = [
   {
     id: "edu-001",
-    startDate: "2018",
-    endDate: "2022",
-    name: "Bacharelado em Engenharia de Software",
+    startDate: "2023",
+    endDate: "2025",
+    name: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
     focus: "Engenharia de Software",
-    institution: "Universidade XYZ",
-    city: "São Paulo, SP",
+    institution: "Centro Universitário FASIPE",
+    city: "Sinop, MT",
     description:
-      "Formação sólida em princípios de engenharia de software, arquitetura de sistemas e desenvolvimento de aplicações. Participação em projetos de pesquisa focados em otimização de algoritmos e escalabilidade de sistemas distribuídos.",
+      "Curso superior de tecnologia com foco em desenvolvimento de software, arquitetura de sistemas, engenharia de software, redes e base de robótica.",
+  },
+  {
+    id: "edu-002",
+    startDate: "2026",
+    endDate: "2027*",
+    name: "Mestrado em Propriedade Intelectual e Transferência de Tecnologia para Inovação",
+    focus: "Propriedade Intelectual e Transferência de Tecnologia",
+    institution: "Universidade do Estado de Mato Grosso (UNEMAT) - PROFNIT",
+    city: "Sinop, MT",
+    description:
+      "Programa de pós-graduação stricto sensu voltado à pesquisa e inovação tecnológica, com foco em propriedade intelectual e transferência de tecnologia.",
   },
 ];
 
 export const complementaryEducationData: ComplementaryEducation[] = [
   {
     id: "comp-001",
-    name: "Certificação AWS Solutions Architect Associate",
-    institution: "Amazon Web Services",
-    completionDate: "2023",
-  },
-  {
-    id: "comp-002",
-    name: "Advanced Node.js and Microservices",
-    institution: "Udemy",
-    completionDate: "2023",
-  },
-  {
-    id: "comp-003",
-    name: "PostgreSQL Advanced Administration",
-    institution: "Coursera",
-    completionDate: "2022",
+    name: "Certificação em HTML, CSS e JavaScript",
+    institution: "Curso em Vídeo",
+    completionDate: "2022-2023",
   },
 ];
 
@@ -110,37 +109,49 @@ export const complementaryEducationData: ComplementaryEducation[] = [
 export const professionalExperienceData: ProfessionalExperience[] = [
   {
     id: "prof-001",
-    company: "Tech Startup ABC",
+    company: "RuralHub Tecnologia",
     period: {
-      start: "Jan 2023",
+      start: "Jul 2023",
       end: "Present",
     },
-    role: "Senior Backend Engineer",
+    role: "Analista de Suporte Pleno",
     description:
-      "Arquiteto e desenvolvedor de APIs RESTful e GraphQL de alta performance. Responsável pela migração de monolito para microserviços, resultando em 40% de redução em latência. Implementação de cache distribuído com Redis e otimização de queries SQL complexas. Mentoria de junior developers e code reviews rigorosos.",
+      "Responsável pelo suporte técnico em nível pleno, incluindo plantão de suporte, atendimento a demandas mais complexas e apoio direto aos clientes na operação dos sistemas. Atuação com foco na análise de problemas, orientação estratégica aos usuários e melhoria contínua dos processos de suporte. Realização e condução de treinamentos online e presenciais para capacitação dos clientes, além do compartilhamento de conhecimento com a equipe, contribuindo para a qualidade dos serviços e a satisfação dos usuários.",
   },
   {
     id: "prof-002",
-    company: "Digital Solutions Ltd",
+    company: "Unifasipe - Centro Universitário FASIPE",
     period: {
-      start: "Jun 2021",
-      end: "Dec 2022",
+      start: "Fev 2026",
+      end: "Present",
     },
-    role: "Backend Developer",
+    role: "Professor",
     description:
-      "Desenvolvimento de APIs em Node.js e Express para plataforma SaaS. Implementação de autenticação JWT, autorização baseada em roles e integração com serviços de pagamento. Otimização de performance de banco de dados PostgreSQL e implementação de replicação para alta disponibilidade.",
+      "Responsável por ministrar conteúdos fundamentais para a formação em tecnologia em nível superior, abordando lógica proposicional, conectivos, tabelas verdade, raciocínio lógico, fundamentos matemáticos aplicados à computação e base estrutural para algoritmos e programação.",
   },
   {
     id: "prof-003",
-    company: "Freelance Projects",
+    company: "Orcontec Contabilidade",
     period: {
-      start: "2020",
-      end: "2021",
+      start: "2020/01",
+      end: "2023/01",
     },
-    role: "Full Stack Developer",
+    role: "Auxiliar Geral",
     description:
-      "Desenvolvimento de aplicações web full stack para clientes diversos. Experiência com Node.js, React, MongoDB e AWS. Implementação de CI/CD pipelines e containerização com Docker.",
-    isNonProgramming: false,
+      "Atuação em rotinas administrativas e operacionais, incluindo serviços de office boy, emissão de notas fiscais, guias florestais e apoio às atividades do escritório. Desenvolvendo disciplina, responsabilidade e visão de processos.",
+    isNonProgramming: true,
+  },
+  {
+    id: "prof-004",
+    company: "Enermat",
+    period: {
+      start: "2023/02",
+      end: "2023/07",
+    },
+    role: "Estoquista",
+    description:
+      "Atuação no controle e organização de estoque, recebimento e conferência de mercadorias, separação de pedidos e apoio ao atendimento ao cliente. Responsável por garantir a correta armazenagem dos produtos, agilidade no atendimento e suporte às rotinas operacionais da loja, contribuindo para a eficiência dos processos internos.",
+    isNonProgramming: true,
   },
 ];
 
@@ -279,78 +290,80 @@ export const projectsData: Project[] = [
     shortDescription:
       "API do sistema para registro de presenças por meio de leitura de QR Code.",
     description:
-      "Plataforma de processamento de dados em tempo real construída com Node.js, Prisma e PostgreSQL.",
+      "Plataforma de processamento de dados em tempo real construída com Node.js, Prisma e PostgreSQL. Sendo o meu projeto para conclusão de graduação.",
     problemSolved:
       "Nas aulas, todas as presenças eram registradas manualmente em papel, o que era ineficiente e propenso a erros.",
     solution:
       "Arquitetura MVC com endpoints RESTful para o CRUD completo da plataforma. Implementação de validação de dados e autenticação JWT.",
     technicalChallenges: [
-      "Garantir idempotência em processamento distribuído",
-      "Otimizar latência de ponta a ponta",
-      "Implementar monitoramento e alertas em tempo real",
+      "Implementar autenticação segura utilizando JWT para controle de acesso.",
+      "Modelar o banco de dados relacional com Prisma e PostgreSQL para suportar alunos, turmas, eventos e presenças.",
+      "Desenvolver uma API REST organizada em arquitetura MVC com validações e tratamento de erros.",
+      "Integrar o processo de leitura de QR Code para registrar presenças de forma rápida e confiável."
     ],
     learnings: [
-      "Padrões de event sourcing e CQRS",
-      "Escalabilidade horizontal com Kubernetes",
-      "Observabilidade com Prometheus e Grafana",
+      "Desenvolvimento de APIs REST seguindo boas práticas de arquitetura MVC.",
+      "Modelagem de banco de dados e utilização do ORM Prisma com PostgreSQL.",
+      "Implementação de autenticação e autorização utilizando JSON Web Token (JWT).",
+      "Documentação e testes de endpoints utilizando Swagger/OpenAPI."
     ],
-    technologies: ["Node.js", "Kafka", "PostgreSQL", "Docker", "Kubernetes"],
+    technologies: ["Node.js", "Prisma", "PostgreSQL", "Swagger"],
     status: "completed",
     isFeatured: true,
-    repositoryUrl: "https://github.com/joao-cordeiro/realtime-data-platform",
-    demoUrl: "https://demo.example.com/realtime-platform",
+    repositoryUrl: "https://github.com/JoaoAc05/Automatizacao-Chamada",
+    demoUrl: "https://automatizacao-chamada.onrender.com/docs/#/",
   },
   {
     id: "proj-002",
-    title: "API GraphQL de E-commerce",
+    title: "Atualização Cambial",
     shortDescription:
-      "API GraphQL performática para plataforma de e-commerce com suporte a múltiplas moedas e idiomas.",
+      "Bot de consultas a APIs de cotação cambial diariamente.",
     description:
-      "API GraphQL construída com Apollo Server, Node.js e PostgreSQL para plataforma de e-commerce global.",
+      "BOT construido em python e alocado na vercel para fazer consulta de cambio uma vez ao dia a enviar alertas via e-mail caso os valores estejam a baixo de um limite.",
     problemSolved:
-      "Reduzir over-fetching de dados e melhorar performance de aplicações mobile.",
+      "Ter maior controle sobre as cotações cambiais e receber notificações em tempo real.",
     solution:
-      "Implementação de GraphQL com data loaders para evitar N+1 queries, caching com Redis e paginação eficiente.",
+      "Bot que consulta APIs de cotação cambial diariamente e envia alertas por e-mail quando os valores atingem limites pré-definidos.",
     technicalChallenges: [
-      "Otimizar resolvers para evitar N+1 queries",
-      "Implementar autenticação e autorização granular",
-      "Suportar múltiplas moedas com conversão em tempo real",
+      "Implementar consultas a múltiplas APIs de cotação cambial e consolidar os resultados.", 
+      "Gerenciar agendamento de tarefas diárias para execução do bot.", 
+      "Configurar envio de e-mails com alertas personalizados."
     ],
     learnings: [
-      "Boas práticas de design de schema GraphQL",
-      "Performance tuning em queries complexas",
-      "Implementação de subscriptions em tempo real",
+      "Integração com APIs externas e tratamento de dados em tempo real.", 
+      "Automatização de tarefas recorrentes utilizando agendadores e cron jobs.", 
+      "Configuração de serviços de envio de e-mails e notificações."
     ],
-    technologies: ["Node.js", "GraphQL", "Apollo", "PostgreSQL", "Redis"],
+    technologies: ["Python", "Vercel"],
     status: "completed",
     isFeatured: true,
-    repositoryUrl: "https://github.com/joao-cordeiro/ecommerce-graphql-api",
+    repositoryUrl: "https://github.com/JoaoAc05/Cambio",
   },
   {
     id: "proj-003",
-    title: "Sistema de Autenticação e Autorização Centralizado",
+    title: "Discord-Bot",
     shortDescription:
-      "Serviço centralizado de autenticação com suporte a OAuth2, SAML e autenticação multifator.",
+      "Bot de interação para o Discord.",
     description:
-      "Sistema de autenticação e autorização construído com Node.js, JWT e PostgreSQL.",
+      "BOT construido em JavaScript para auxiliar na gestão de informações pela equipe de suporte da empresa. Organizando informações de forma estruturada e disponibilizando em forma de comandos e respostas com IA integrada ao N8N.",
     problemSolved:
-      "Múltiplos serviços precisavam de autenticação consistente e segura.",
+      "A equipe de suporte precisava de uma forma eficiente de consultar informações de uso do dia dia e de forma rápida, sem precisar acessar múltiplas fontes de dados.",
     solution:
-      "Serviço centralizado com JWT, refresh tokens, rate limiting e suporte a múltiplos provedores OAuth.",
+      "Bot centraliza as informações e permite interações estáticas e personalizadas que são direcionadas para uma IA através do N8N.",
     technicalChallenges: [
-      "Implementar refresh token rotation segura",
-      "Suportar múltiplos provedores de identidade",
-      "Manter performance com milhões de tokens",
+      "Implementar integração com a API do Discord para receber e responder a comandos.",
+      "Gerenciar o estado do bot e armazenar informações relevantes em 'banco de dados'.",
+      "Integrar com o N8N para processar comandos e fornecer respostas inteligentes.",
     ],
     learnings: [
-      "Segurança em sistemas distribuídos",
-      "Padrões de autenticação moderna",
-      "Conformidade com OWASP e GDPR",
+      "Integração com APIs de terceiros (Discord API)",
+      "Automação de processos com N8N",
+      "Desenvolvimento de bots interativos e responsivos",
     ],
-    technologies: ["Node.js", "JWT", "PostgreSQL", "Redis", "OAuth2"],
+    technologies: ["JavaScript", "N8N", "Discord API"],
     status: "completed",
     isFeatured: true,
-    repositoryUrl: "https://github.com/joao-cordeiro/auth-service",
+    repositoryUrl: "https://github.com/JoaoAc05/Discord-BOT",
   },
   {
     id: "proj-004",
@@ -394,11 +407,13 @@ export const professionalPhilosophy = {
   focus:
     "Arquitetura escalável, performance e confiabilidade. Foco em construir sistemas que crescem com o negócio.",
   philosophy:
-    "Acredito que bom código backend é invisível ao usuário final, mas fundamental para experiência de qualidade. Busco sempre entender o problema de negócio antes de implementar soluções técnicas.",
+    "Trabalho com foco em organização, colaboração e melhoria contínua, utilizando a tecnologia para desenvolver soluções robustas, eficientes e orientadas às necessidades dos usuários.",
   strengths: [
-    "Resolução de problemas complexos em sistemas distribuídos",
-    "Mentoria e compartilhamento de conhecimento",
-    "Atenção a detalhes e qualidade de código",
-    "Aprendizado contínuo e adaptação a novas tecnologias",
+    "Desenvolvimento backend e APIs escaláveis",
+    "Aprendizado constante e adaptação a novas tecnologias",
+    "Resolução de problemas complexos e otimização de sistemas",
+    "Colaboração em equipes multidisciplinares e comunicação clara",
+    "Regra de negócio e visão de produto para soluções técnicas",
+    "Compartilhamento de conhecimento com colegas",
   ],
 };
