@@ -173,18 +173,18 @@ export const technologiesData: Technology[] = [
     category: "backend",
     icon: "🚀",
   },
-//   {
-//     id: "tech-003",
-//     name: "python",
-//     category: "backend",
-//     icon: "🐍",
-//   },
-//   {
-//     id: "tech-004",
-//     name: "FastAPI",
-//     category: "backend",
-//     icon: "⚡",
-//   },
+  //   {
+  //     id: "tech-003",
+  //     name: "python",
+  //     category: "backend",
+  //     icon: "🐍",
+  //   },
+  //   {
+  //     id: "tech-004",
+  //     name: "FastAPI",
+  //     category: "backend",
+  //     icon: "⚡",
+  //   },
 
   // Database
   {
@@ -205,12 +205,12 @@ export const technologiesData: Technology[] = [
     category: "database",
     icon: "💾",
   },
-//   {
-//     id: "tech-008",
-//     name: "Elasticsearch",
-//     category: "database",
-//     icon: "🔍",
-//   },
+  //   {
+  //     id: "tech-008",
+  //     name: "Elasticsearch",
+  //     category: "database",
+  //     icon: "🔍",
+  //   },
 
   // APIs
   {
@@ -219,18 +219,18 @@ export const technologiesData: Technology[] = [
     category: "api",
     icon: "🔗",
   },
-//   {
-//     id: "tech-010",
-//     name: "GraphQL",
-//     category: "api",
-//     icon: "📊",
-//   },
-//   {
-//     id: "tech-011",
-//     name: "gRPC",
-//     category: "api",
-//     icon: "📡",
-//   },
+  //   {
+  //     id: "tech-010",
+  //     name: "GraphQL",
+  //     category: "api",
+  //     icon: "📊",
+  //   },
+  //   {
+  //     id: "tech-011",
+  //     name: "gRPC",
+  //     category: "api",
+  //     icon: "📡",
+  //   },
 
   // DevOps
   {
@@ -325,13 +325,13 @@ export const projectsData: Project[] = [
     solution:
       "Bot que consulta APIs de cotação cambial diariamente e envia alertas por e-mail quando os valores atingem limites pré-definidos.",
     technicalChallenges: [
-      "Implementar consultas a múltiplas APIs de cotação cambial e consolidar os resultados.", 
-      "Gerenciar agendamento de tarefas diárias para execução do bot.", 
+      "Implementar consultas a múltiplas APIs de cotação cambial e consolidar os resultados.",
+      "Gerenciar agendamento de tarefas diárias para execução do bot.",
       "Configurar envio de e-mails com alertas personalizados."
     ],
     learnings: [
-      "Integração com APIs externas e tratamento de dados em tempo real.", 
-      "Automatização de tarefas recorrentes utilizando agendadores e cron jobs.", 
+      "Integração com APIs externas e tratamento de dados em tempo real.",
+      "Automatização de tarefas recorrentes utilizando agendadores e cron jobs.",
       "Configuração de serviços de envio de e-mails e notificações."
     ],
     technologies: ["Python", "Vercel"],
@@ -343,7 +343,7 @@ export const projectsData: Project[] = [
     id: "proj-003",
     title: "Discord-Bot",
     shortDescription:
-      "Bot de interação para o Discord.",
+      "Bot de interação para o Discord integrado com IA via N8N.",
     description:
       "BOT construido em JavaScript para auxiliar na gestão de informações pela equipe de suporte da empresa. Organizando informações de forma estruturada e disponibilizando em forma de comandos e respostas com IA integrada ao N8N.",
     problemSolved:
@@ -367,35 +367,33 @@ export const projectsData: Project[] = [
   },
   {
     id: "proj-004",
-    title: "Migração de Monolito para Microserviços",
+    title: "SecureAPI Playground",
     shortDescription:
-      "Refatoração de aplicação monolítica em 15+ microserviços independentes.",
+      "Diferentes exemplos de validações, autenticação e tratamento de dados.",
     description:
-      "Projeto de migração arquitetural de monolito para arquitetura de microserviços.",
+      "Aplicação que centraliza diferentes exemplos de validações, autenticação e tratamento de dados utilizados em aplicações reais, permitindo que qualquer pessoa teste visualmente como essas validações funcionam.",
     problemSolved:
-      "Monolito crescente dificultava manutenção, deploy e escalabilidade independente.",
+      "Validações, autenticações e tratamentos necessários para garantir a segurança e integridade dos dados e de sistemas.",
     solution:
-      "Decomposição em domínios de negócio, implementação de API Gateway, service discovery e comunicação assíncrona.",
+      "Playground de apresentação e treinamento.",
     technicalChallenges: [
-      "Manter consistência de dados entre serviços",
-      "Implementar distributed tracing",
-      "Coordenar deploys de múltiplos serviços",
+      "Diferentes tipos de validações de dados, incluindo validação de entrada, validação de formato e validação de regras de negócio.",
+      "Autenticação segura utilizando JWT e/ou OAuth2 para proteger endpoints e recursos sensíveis.",
+      "Desenvolver tratamento de erros robusto para lidar com diferentes cenários de falha e fornecer feedback adequado aos usuários.",
     ],
     learnings: [
-      "Padrões de decomposição de domínios",
-      "Saga pattern para transações distribuídas",
-      "Observabilidade em arquiteturas distribuídas",
+      "Lidar e consolidar validações necessárias para qualquer sistema",
+      "Autenticação e barreira de acessos não autorizados",
+      "Tratamento de erros e feedback para usuários",
     ],
     technologies: [
       "Node.js",
-      "Docker",
-      "Kubernetes",
-      "RabbitMQ",
-      "PostgreSQL",
+      "Express.js",
+      "Swagger",
     ],
     status: "in-development",
     isFeatured: false,
-    repositoryUrl: "https://github.com/joao-cordeiro/microservices-migration",
+    repositoryUrl: "https://github.com/JoaoAc05/",
   },
 ];
 

@@ -116,7 +116,7 @@ export default function Formacao() {
         <div className="space-y-2">
           <h2 className="text-3xl md:text-4xl font-bold">Artigos Publicados</h2>
           <p className="text-muted-foreground">
-            Artigos técnicos e reflexões sobre desenvolvimento backend e arquitetura de sistemas.
+            Artigos técnicos e reflexões.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function Formacao() {
                 </p>
                 <p className="text-muted-foreground">
                   Esta seção será preenchida com artigos técnicos sobre backend,
-                  APIs e arquitetura de sistemas.
+                  APIs e arquitetura de sistemas, além de artigos publicados durante período de graduação.
                 </p>
               </div>
             </div>

@@ -109,7 +109,7 @@ export default function Contato() {
                         className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-blue-600/50 hover:bg-muted/50 transition-all group"
                       >
                         <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-900/50 transition-colors">
-                          <span className="text-xl">✉️</span>
+                          <span className="text-xl">🤖</span>
                         </div>
                         <div>
                           <p className="font-semibold text-foreground">Discord</p>

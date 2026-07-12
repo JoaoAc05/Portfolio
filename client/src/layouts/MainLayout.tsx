@@ -97,7 +97,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
 
       {/* Footer */}
       <footer className="border-t border-border bg-muted/50">
-        <div className="container py-12 md:py-16">
+        <div className="container py-12 md:py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Copyright */}
             <div className="text-sm text-muted-foreground">

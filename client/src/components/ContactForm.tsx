@@ -100,7 +100,7 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call (in production, this would send to a backend)
+      // Simulate API call (in production, this would send to a backend) <<<<>>>>>
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       // Success

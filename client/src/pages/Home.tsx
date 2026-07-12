@@ -257,71 +257,12 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div>
-            <ContactForm />
-          </div>
-
-          {/* Contact Info */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold">Outras Formas de Contato</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Você também pode me encontrar nas seguintes plataformas:
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <a
-                href="https://www.linkedin.com/in/joao-a-cordeiro/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-blue-600/50 hover:bg-muted/50 transition-all group"
-              >
-                <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-900/50 transition-colors">
-                  <span className="text-xl">💼</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">LinkedIn</p>
-                  <p className="text-sm text-muted-foreground">
-                    linkedin.com/in/joao-a-cordeiro
-                  </p>
-                </div>
+        <a href="/contato" className="inline-block">
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  Entrar em Contato
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
               </a>
-
-              <a
-                href="https://github.com/JoaoAc05/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-blue-600/50 hover:bg-muted/50 transition-all group"
-              >
-                <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-900/50 transition-colors">
-                  <span className="text-xl">💻</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">GitHub</p>
-                  <p className="text-sm text-muted-foreground">
-                    github.com/JoaoAc05
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="mailto:joaoalvescordeiro2005@gmail.com"
-                className="flex items-center gap-4 p-4 rounded-lg border border-border hover:border-blue-600/50 hover:bg-muted/50 transition-all group"
-              >
-                <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-900/50 transition-colors">
-                  <span className="text-xl">✉️</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Email</p>
-                  <p className="text-sm text-muted-foreground">joaoalvescordeiro2005@gmail.com</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
       </section>
     </div>
   );
