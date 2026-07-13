@@ -1,18 +1,3 @@
-/**
- * ContactForm Component
- * 
- * Features:
- * - Form validation (name, email, message)
- * - Success/error feedback with toast
- * - Accessible form inputs
- * - Responsive design
- * 
- * Design: Minimalismo Corporativo Elegante
- * - Clean form layout
- * - Clear labels and error messages
- * - Smooth interactions
- */
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

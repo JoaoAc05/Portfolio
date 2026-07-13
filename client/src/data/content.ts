@@ -15,6 +15,7 @@ export interface Education {
   startDate: string;
   endDate: string;
   name: string;
+  type: string;
   focus: string;
   institution: string;
   city: string;
@@ -73,7 +74,8 @@ export const educationData: Education[] = [
     id: "edu-001",
     startDate: "2023",
     endDate: "2025",
-    name: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+    name: "Análise e Desenvolvimento de Sistemas",
+    type: "Tecnólogo",
     focus: "Engenharia de Software",
     institution: "Centro Universitário FASIPE",
     city: "Sinop, MT",
@@ -84,7 +86,8 @@ export const educationData: Education[] = [
     id: "edu-002",
     startDate: "2026",
     endDate: "2027*",
-    name: "Mestrado em Propriedade Intelectual e Transferência de Tecnologia para Inovação",
+    name: "Propriedade Intelectual e Transferência de Tecnologia para Inovação",
+    type: "Mestrado",
     focus: "Propriedade Intelectual e Transferência de Tecnologia",
     institution: "Universidade do Estado de Mato Grosso (UNEMAT) - PROFNIT",
     city: "Sinop, MT",
@@ -111,12 +114,12 @@ export const professionalExperienceData: ProfessionalExperience[] = [
     id: "prof-001",
     company: "RuralHub Tecnologia",
     period: {
-      start: "Jul 2023",
+      start: "Jul 2026",
       end: "Present",
     },
-    role: "Analista de Suporte Pleno",
+    role: "Desenvolvedor JR",
     description:
-      "Responsável pelo suporte técnico em nível pleno, incluindo plantão de suporte, atendimento a demandas mais complexas e apoio direto aos clientes na operação dos sistemas. Atuação com foco na análise de problemas, orientação estratégica aos usuários e melhoria contínua dos processos de suporte. Realização e condução de treinamentos online e presenciais para capacitação dos clientes, além do compartilhamento de conhecimento com a equipe, contribuindo para a qualidade dos serviços e a satisfação dos usuários.",
+      "Manutenção de sistema ERP voltado ao agronegócio, trabalhando com linguagem Delphi, banco de dados Firebird. Responsável por implementar novas funcionalidades, corrigir bugs e otimizar processos existentes, garantindo a eficiência e confiabilidade do sistema para os usuários finais.",
   },
   {
     id: "prof-002",
@@ -131,26 +134,37 @@ export const professionalExperienceData: ProfessionalExperience[] = [
   },
   {
     id: "prof-003",
-    company: "Orcontec Contabilidade",
+    company: "RuralHub Tecnologia",
     period: {
-      start: "2020/01",
-      end: "2023/01",
+      start: "Jul 2023",
+      end: "Jul 2026",
     },
-    role: "Auxiliar Geral",
+    role: "Analista de Suporte Pleno",
     description:
-      "Atuação em rotinas administrativas e operacionais, incluindo serviços de office boy, emissão de notas fiscais, guias florestais e apoio às atividades do escritório. Desenvolvendo disciplina, responsabilidade e visão de processos.",
-    isNonProgramming: true,
+      "Responsável pelo suporte técnico em nível pleno, incluindo plantão de suporte, atendimento a demandas mais complexas e apoio direto aos clientes na operação dos sistemas. Atuação com foco na análise de problemas, orientação estratégica aos usuários e melhoria contínua dos processos de suporte. Realização e condução de treinamentos online e presenciais para capacitação dos clientes, além do compartilhamento de conhecimento com a equipe, contribuindo para a qualidade dos serviços e a satisfação dos usuários.",
   },
   {
     id: "prof-004",
     company: "Enermat",
     period: {
-      start: "2023/02",
-      end: "2023/07",
+      start: "Fev 2023",
+      end: "Jul 2023",
     },
     role: "Estoquista",
     description:
       "Atuação no controle e organização de estoque, recebimento e conferência de mercadorias, separação de pedidos e apoio ao atendimento ao cliente. Responsável por garantir a correta armazenagem dos produtos, agilidade no atendimento e suporte às rotinas operacionais da loja, contribuindo para a eficiência dos processos internos.",
+    isNonProgramming: true,
+  },
+  {
+    id: "prof-005",
+    company: "Orcontec Contabilidade",
+    period: {
+      start: "Jan 2020",
+      end: "Jan 2023",
+    },
+    role: "Auxiliar Geral",
+    description:
+      "Atuação em rotinas administrativas e operacionais, incluindo serviços de office boy, emissão de notas fiscais, guias florestais e apoio às atividades do escritório. Desenvolvendo disciplina, responsabilidade e visão de processos.",
     isNonProgramming: true,
   },
 ];
@@ -297,7 +311,7 @@ export const projectsData: Project[] = [
       "Arquitetura MVC com endpoints RESTful para o CRUD completo da plataforma. Implementação de validação de dados e autenticação JWT.",
     technicalChallenges: [
       "Implementar autenticação segura utilizando JWT para controle de acesso.",
-      "Modelar o banco de dados relacional com Prisma e PostgreSQL para suportar alunos, turmas, eventos e presenças.",
+      "Modelar o banco de dados relacional com Prisma e PostgreSQL para suportar alunos, turmas, disciplinas e presenças.",
       "Desenvolver uma API REST organizada em arquitetura MVC com validações e tratamento de erros.",
       "Integrar o processo de leitura de QR Code para registrar presenças de forma rápida e confiável."
     ],

@@ -211,7 +211,7 @@ export default function ProjetoDetalhes() {
               </Button>
             </a>
           </Link>
-          <Link href="#contato">
+          <Link href="/contato">
             <a>
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 Entrar em Contato

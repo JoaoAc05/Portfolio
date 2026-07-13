@@ -36,10 +36,10 @@ export default function Formacao() {
         <div className="space-y-2">
           <div className="flex items-center gap-3">
             <BookOpen className="w-6 h-6 text-blue-600" />
-            <h2 className="text-3xl md:text-4xl font-bold">Educação Acadêmica</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Formação Acadêmica</h2>
           </div>
           <p className="text-muted-foreground">
-            Formação superior e especialização em engenharia de software.
+            Formação superior e especialização.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Formacao() {
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1">
-                    <CardTitle className="text-2xl">{edu.name}</CardTitle>
+                    <CardTitle className="text-2xl">{edu.type} - {edu.name}</CardTitle>
                     <CardDescription className="text-base mt-2">
                       {edu.focus} • {edu.institution}
                     </CardDescription>
@@ -57,7 +57,7 @@ export default function Formacao() {
                   <div className="flex items-center gap-2 text-sm text-muted-foreground whitespace-nowrap">
                     <Calendar className="w-4 h-4" />
                     <span>
-                      {edu.startDate} - {edu.endDate}
+                      {edu.startDate} - {edu.endDate} 
                     </span>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export default function Formacao() {
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">{edu.description}</p>
                 <div className="mt-4 pt-4 border-t border-border">
-                  <p className="text-sm font-medium text-foreground mb-2">Localização</p>
+                  <p className="text-sm font-medium text-foreground mb-2">📍Localização</p>
                   <p className="text-sm text-muted-foreground">{edu.city}</p>
                 </div>
               </CardContent>

@@ -112,7 +112,7 @@ export default function Profissional() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <span className="text-sm font-semibold text-blue-600">
-                        {index === 0 ? "Atual" : `${index}º`}
+                        {exp.period.end === "Present" ? "Atual" : `${index}º`}
                       </span>
                       <CardTitle className="text-2xl">{exp.role}</CardTitle>
                     </div>
