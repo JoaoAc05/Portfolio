@@ -452,7 +452,7 @@ export const professionalPhilosophy = {
 
 export const articlesData: Article[] = [
   {
-    id: "apis-e-regras-de-negocio",
+    id: "art-001",
     title: "APIs além dos endpoints: regras de negócio e manutenção",
     summary:
       "Reflexão sobre organização de APIs, responsabilidades bem definidas e manutenção de sistemas ao longo do tempo.",

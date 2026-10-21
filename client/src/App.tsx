@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Formacao from "./pages/Formacao";
+import ArtigoDetalhes from "./pages/ArtigoDetalhes";
 import Profissional from "./pages/Profissional";
 import Projetos from "./pages/Projetos";
 import ProjetoDetalhes from "./pages/ProjetoDetalhes";
@@ -30,7 +31,7 @@ function Router() {
       <Switch>
         <Route path={"/"} component={Home} />
         <Route path={"/formacao"} component={Formacao} />
-        <Route path={"/artigos/:id"} component={ProjetoDetalhes} />
+        <Route path={"/artigos/:id"} component={ArtigoDetalhes} />
         <Route path={"/profissional"} component={Profissional} />
         <Route path={"/projetos"} component={Projetos} />
         <Route path={"/projetos/:id"} component={ProjetoDetalhes} />
