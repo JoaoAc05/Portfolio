@@ -10,6 +10,8 @@
  * - Emphasis on backend, APIs, and database expertise
  */
 
+import { url } from "inspector/promises";
+
 export interface Education {
   id: string;
   startDate: string;
@@ -450,36 +452,15 @@ export const professionalPhilosophy = {
 // ARTICLES AND TECHNICAL DISCUSSIONS DATA
 // ============================================
 
-export const articlesData: Article[] = [
+export const articlesData: Article[] = [  
   {
     id: "art-001",
-    title: "APIs além dos endpoints: regras de negócio e manutenção",
-    summary:
-      "Reflexão sobre organização de APIs, responsabilidades bem definidas e manutenção de sistemas ao longo do tempo.",
-    category: "Arquitetura de software",
-    type: "discussion",
-    readingTime: "3 min",
-    tags: ["APIs REST", "Arquitetura", "Manutenção"],
-    content: [
-      "Uma API não deve ser pensada apenas como um conjunto de endpoints. Ela representa uma fronteira entre sistemas e precisa comunicar operações, validar solicitações e aplicar regras de negócio de maneira previsível.",
-      "Quando a lógica fica concentrada nos controladores ou repetida em diferentes rotas, mudanças simples podem gerar comportamentos divergentes. Separar responsabilidades — por exemplo, entrada HTTP, lógica de negócio e acesso a dados — ajuda a manter o código compreensível e testável.",
-      "A arquitetura ideal depende do porte e das necessidades do projeto. O objetivo não é adicionar camadas por convenção, mas manter cada responsabilidade em um lugar claro, com dependências explícitas e testes que protejam os comportamentos importantes.",
-      "Uma API sustentável combina contratos claros, tratamento de erros consistente, documentação atualizada e decisões arquiteturais proporcionais à complexidade real do sistema."
-    ],
-    keyPoints: [
-      "Tratar endpoints como contratos entre sistemas.",
-      "Evitar duplicação de regras de negócio.",
-      "Separar responsabilidades de acordo com a complexidade do projeto.",
-      "Documentar e testar os comportamentos relevantes da API."
-    ]
-  },
-  {
-    id: "art-002",
     title: "Inteligência Artificial, C e Assembly: estamos caminhando para uma nova era (ou retorno de uma) das linguagens de programação?",
     summary:
       "Uma reflexão sobre o possível retorno das linguagens de baixo nível, a eficiência do código gerado por inteligência artificial e a importância da supervisão humana no desenvolvimento de software.",
     category: "Inteligência Artificial",
     type: "discussion",
+    author: "João Alves Cordeiro",
     readingTime: "6 min",
     tags: [
       "Inteligência Artificial",
@@ -489,7 +470,8 @@ export const articlesData: Article[] = [
       "Otimização de Código"
     ],
     content: [
-      "O avanço das ferramentas de inteligência artificial aplicadas à programação levanta uma questão interessante: e se o futuro do desenvolvimento de software não estiver apenas em linguagens cada vez mais abstratas, mas também em um retorno às linguagens de baixo nível, como C e Assembly? Essa possibilidade foi o ponto de partida para esta reflexão após assistir a um vídeo do canal Safe Source, que discute como a evolução da IA pode influenciar as escolhas tecnológicas e a eficiência dos sistemas.",
+      "O avanço das ferramentas de inteligência artificial aplicadas à programação levanta uma questão interessante: e se o futuro do desenvolvimento de software não estiver apenas em linguagens cada vez mais abstratas, mas também em um retorno às linguagens de baixo nível, como C e Assembly? Essa possibilidade discutida no vídeo do canal Safe Source foi o ponto de partida para esta reflexão.",
+      "Por que utilizar uma linguagem de baixo nível?",
       "A ideia de utilizar linguagens de baixo nível para melhorar o processamento, reduzir o consumo de recursos e otimizar o armazenamento é bastante interessante. A linguagem C, especialmente em sua abordagem clássica associada a Kernighan e Ritchie, oferece controle sobre os recursos da máquina e proximidade com o funcionamento do hardware. Assembly, por sua vez, permite um controle ainda mais específico, embora possa aumentar consideravelmente a complexidade do desenvolvimento e da manutenção.",
       "Entretanto, acredito que uma eventual retomada dessas linguagens não significaria simplesmente abandonar as tecnologias atuais. A escolha de uma linguagem depende de diversos fatores, como o domínio da aplicação, a produtividade da equipe, os requisitos de desempenho, a segurança e o custo de manutenção. O mais provável seria uma combinação de tecnologias, com linguagens de baixo nível utilizadas onde suas vantagens realmente justificassem a escolha.",
       "Outro ponto importante é a modernização dos sistemas legados. Um exemplo é o uso do COBOL em sistemas corporativos e bancários, nos quais aplicações antigas continuam desempenhando funções essenciais. A permanência dessas tecnologias não ocorre necessariamente porque sejam as melhores opções para qualquer novo projeto, mas porque acumulam regras de negócio, integrações e dependências que precisam continuar funcionando corretamente.",
@@ -505,6 +487,21 @@ export const articlesData: Article[] = [
       "Para mim, o principal desafio não é escolher entre programar manualmente ou utilizar inteligência artificial, tampouco decidir antecipadamente qual linguagem dominará o futuro. O desafio está em compreender suficientemente os fundamentos da computação para avaliar as soluções produzidas por essas ferramentas.",
       "Conhecer algoritmos, estruturas de dados, arquitetura de computadores, gerenciamento de memória e funcionamento dos sistemas operacionais permite analisar o código para além de sua aparência ou de sua capacidade de executar uma tarefa simples. Esses conhecimentos também ajudam a identificar quando uma solução de alto nível é suficiente e quando vale a pena considerar uma implementação mais próxima do hardware.",
       "Vejo com interesse a possibilidade de a inteligência artificial contribuir para uma nova valorização das linguagens de baixo nível em cenários que exigem maior eficiência. No entanto, acredito que essa transformação será gradual e dependerá das necessidades de cada sistema, dos custos de migração e da capacidade de validar as soluções geradas. Também não acredito que a evolução da IA torne a supervisão técnica dispensável. O trabalho do desenvolvedor pode mudar, passando da escrita de cada trecho de código para uma atuação mais concentrada em arquitetura, validação, segurança e tomada de decisões, mas a responsabilidade pela qualidade do software continuará sendo essencial."
+    ],
+    keyPoints: [
+      "A inteligência artificial pode favorecer o uso de linguagens de baixo nível em aplicações que exigem maior controle sobre processamento e memória.",
+      "A modernização de sistemas legados envolve regras de negócio, integrações, testes e riscos, não apenas a conversão de código.",
+      "Código funcional não é necessariamente código eficiente, seguro ou fácil de manter.",
+      "A escolha entre linguagens de alto e baixo nível deve considerar os requisitos reais de cada aplicação.",
+      "A evolução da IA pode automatizar parte da revisão e dos testes, mas não elimina a responsabilidade técnica.",
+      "Conhecimentos fundamentais de computação continuam essenciais para avaliar criticamente o código gerado por IA."
+    ],
+    references: [
+      {
+        title: "Vídeo: Inteligência Artificial e Linguagens de Baixo Nível - Safe Source",
+        url: "https://lnkd.in/d7Y8TuqU"
+      }
+      
     ],
   },
 ];
