@@ -473,4 +473,38 @@ export const articlesData: Article[] = [
       "Documentar e testar os comportamentos relevantes da API."
     ]
   },
+  {
+    id: "art-002",
+    title: "Inteligência Artificial, C e Assembly: estamos caminhando para uma nova era (ou retorno de uma) das linguagens de programação?",
+    summary:
+      "Uma reflexão sobre o possível retorno das linguagens de baixo nível, a eficiência do código gerado por inteligência artificial e a importância da supervisão humana no desenvolvimento de software.",
+    category: "Inteligência Artificial",
+    type: "discussion",
+    readingTime: "6 min",
+    tags: [
+      "Inteligência Artificial",
+      "Linguagem C",
+      "Assembly",
+      "Engenharia de Software",
+      "Otimização de Código"
+    ],
+    content: [
+      "O avanço das ferramentas de inteligência artificial aplicadas à programação levanta uma questão interessante: e se o futuro do desenvolvimento de software não estiver apenas em linguagens cada vez mais abstratas, mas também em um retorno às linguagens de baixo nível, como C e Assembly? Essa possibilidade foi o ponto de partida para esta reflexão após assistir a um vídeo do canal Safe Source, que discute como a evolução da IA pode influenciar as escolhas tecnológicas e a eficiência dos sistemas.",
+      "A ideia de utilizar linguagens de baixo nível para melhorar o processamento, reduzir o consumo de recursos e otimizar o armazenamento é bastante interessante. A linguagem C, especialmente em sua abordagem clássica associada a Kernighan e Ritchie, oferece controle sobre os recursos da máquina e proximidade com o funcionamento do hardware. Assembly, por sua vez, permite um controle ainda mais específico, embora possa aumentar consideravelmente a complexidade do desenvolvimento e da manutenção.",
+      "Entretanto, acredito que uma eventual retomada dessas linguagens não significaria simplesmente abandonar as tecnologias atuais. A escolha de uma linguagem depende de diversos fatores, como o domínio da aplicação, a produtividade da equipe, os requisitos de desempenho, a segurança e o custo de manutenção. O mais provável seria uma combinação de tecnologias, com linguagens de baixo nível utilizadas onde suas vantagens realmente justificassem a escolha.",
+      "Outro ponto importante é a modernização dos sistemas legados. Um exemplo é o uso do COBOL em sistemas corporativos e bancários, nos quais aplicações antigas continuam desempenhando funções essenciais. A permanência dessas tecnologias não ocorre necessariamente porque sejam as melhores opções para qualquer novo projeto, mas porque acumulam regras de negócio, integrações e dependências que precisam continuar funcionando corretamente.",
+      "A inteligência artificial pode contribuir para analisar código legado, documentar funcionalidades, identificar dependências e automatizar parte das migrações. Ainda assim, acelerar a produção de código não elimina o trabalho de validação, os testes de regressão e a necessidade de garantir que o novo sistema preserve as regras de negócio. Por isso, mesmo que a modernização se torne mais rápida, não considero inevitável uma migração generalizada no curto prazo.",
+      "Apesar dessas possibilidades, existe uma questão que considero fundamental: a qualidade do código gerado por IA. Na minha experiência com essas ferramentas, percebo que nem sempre a primeira solução apresentada é a mais adequada. Em muitos casos, o código funciona, mas poderia ser mais simples, eficiente, seguro ou coerente com a arquitetura do projeto.",
+      "Existe uma diferença entre produzir código que atende a um requisito imediato e desenvolver uma solução sustentável. Um programa pode entregar o resultado esperado e, ainda assim, apresentar consumo desnecessário de recursos, complexidade excessiva, tratamento inadequado de erros ou dificuldades para manutenção e evolução.",
+      "A eficiência também não deve ser avaliada apenas pela velocidade de execução. Consumo de memória, escalabilidade, segurança, legibilidade e custo de manutenção precisam ser considerados de acordo com o contexto. Da mesma forma, migrar um programa para C ou Assembly não garante, por si só, que ele será mais eficiente: a qualidade da implementação, os algoritmos utilizados e as características da aplicação continuam sendo determinantes.",
+      "Por isso, vejo a inteligência artificial como uma ferramenta capaz de ampliar a produtividade, mas cujos resultados precisam ser avaliados criticamente. O desenvolvedor continua responsável por compreender o problema, revisar as decisões técnicas, testar o comportamento e verificar se a solução realmente atende aos requisitos.",
+      "Acredito que os modelos de IA ainda podem evoluir significativamente na geração de código, na compreensão de arquiteturas e na identificação de oportunidades de otimização. É possível imaginar ferramentas capazes de analisar diferentes implementações, comparar seu desempenho e selecionar alternativas mais adequadas para cada cenário.",
+      "Mesmo assim, não considero seguro presumir que essa evolução eliminará a necessidade de supervisão humana. Quanto mais crítico for o sistema, maior será a importância de demonstrar que ele funciona corretamente, protege os dados, atende aos requisitos e se comporta de maneira previsível. Em aplicações financeiras, industriais, médicas ou de infraestrutura, um erro pode produzir consequências que vão muito além de uma falha de programação.",
+      "Avanços em áreas como computação quântica e criptografia pós-quântica também reforçam a importância de acompanhar as mudanças tecnológicas com rigor. Embora esses campos apresentem desafios próprios e não determinem diretamente o futuro da geração de código, eles mostram que a evolução da computação exige conhecimento especializado, avaliação de riscos e atualização constante.",
+      "Talvez, no futuro, a supervisão se torne menos manual e mais automatizada, com agentes capazes de executar testes, verificar propriedades do código, analisar vulnerabilidades e monitorar o comportamento de sistemas. Ainda assim, automatizar verificações não é o mesmo que eliminar a responsabilidade técnica. Será necessário definir critérios de aceitação, avaliar situações excepcionais e decidir quais riscos são aceitáveis.",
+      "Para mim, o principal desafio não é escolher entre programar manualmente ou utilizar inteligência artificial, tampouco decidir antecipadamente qual linguagem dominará o futuro. O desafio está em compreender suficientemente os fundamentos da computação para avaliar as soluções produzidas por essas ferramentas.",
+      "Conhecer algoritmos, estruturas de dados, arquitetura de computadores, gerenciamento de memória e funcionamento dos sistemas operacionais permite analisar o código para além de sua aparência ou de sua capacidade de executar uma tarefa simples. Esses conhecimentos também ajudam a identificar quando uma solução de alto nível é suficiente e quando vale a pena considerar uma implementação mais próxima do hardware.",
+      "Vejo com interesse a possibilidade de a inteligência artificial contribuir para uma nova valorização das linguagens de baixo nível em cenários que exigem maior eficiência. No entanto, acredito que essa transformação será gradual e dependerá das necessidades de cada sistema, dos custos de migração e da capacidade de validar as soluções geradas. Também não acredito que a evolução da IA torne a supervisão técnica dispensável. O trabalho do desenvolvedor pode mudar, passando da escrita de cada trecho de código para uma atuação mais concentrada em arquitetura, validação, segurança e tomada de decisões, mas a responsabilidade pela qualidade do software continuará sendo essencial."
+    ],
+  },
 ];
