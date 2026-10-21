@@ -12,10 +12,11 @@
  * - Generous spacing
  */
 
-import { educationData, complementaryEducationData } from "@/data/content";
+import { Link } from "wouter";
+import { educationData, complementaryEducationData, articlesData } from "@/data/content";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, BookOpen, Award } from "lucide-react";
+import { Calendar, BookOpen, Award, ArrowUpRight, Clock, FileText, MessageCircle  } from "lucide-react";
 
 export default function Formacao() {
   return (
@@ -113,7 +114,7 @@ export default function Formacao() {
 
       {/* Published Articles Section (Placeholder) */}
       <section className="container py-20 md:py-32 space-y-12">
-        <div className="space-y-2">
+        {/* <div className="space-y-2">
           <h2 className="text-3xl md:text-4xl font-bold">Artigos Publicados</h2>
           <p className="text-muted-foreground">
             Artigos técnicos e reflexões.
@@ -135,7 +136,80 @@ export default function Formacao() {
               </div>
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
+        <div className="space-y-2">
+          <div className="flex items-center gap-3">
+            <FileText className="w-6 h-6 text-blue-600" />
+            <h2 className="text-3xl md:text-4xl font-bold">Artigos e Discussões</h2>
+          </div>
+          <p className="text-muted-foreground max-w-2xl">
+            Artigos e reflexões sobre desenvolvimento backend, APIs, arquitetura de sistemas e tecnologia.
+          </p>
+        </div>
+
+        {articlesData.length > 0 ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {articlesData.map((article) => (
+              <Link key={article.id} href={`/artigos/${article.id}`}>
+                <a className="group h-full">
+                  <Card className="h-full flex flex-col hover:shadow-lg hover:border-blue-600/50 transition-all duration-300 cursor-pointer">
+                    <CardHeader className="flex-1">
+                      <div className="flex items-center justify-between gap-3 mb-3">
+                        <Badge variant="secondary" className="whitespace-nowrap">
+                          {article.type === "article" ? (
+                            <><FileText className="w-3 h-3 mr-1" /> Artigo</>
+                          ) : (
+                            <><MessageCircle className="w-3 h-3 mr-1" /> Discussão</>
+                          )}
+                        </Badge>
+                        {article.readingTime && (
+                          <span className="inline-flex items-center gap-1 text-xs text-muted-foreground whitespace-nowrap">
+                            <Clock className="w-3 h-3" /> {article.readingTime}
+                          </span>
+                        )}
+                      </div>
+                      <CardTitle className="text-xl group-hover:text-blue-600 transition-colors line-clamp-3">
+                        {article.title}
+                      </CardTitle>
+                      <CardDescription className="mt-2">{article.category}</CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex flex-col gap-4">
+                      <p className="text-sm text-muted-foreground leading-relaxed line-clamp-4">
+                        {article.summary}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {article.tags.slice(0, 3).map((tag) => (
+                          <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
+                        ))}
+                        {article.tags.length > 3 && (
+                          <Badge variant="outline" className="text-xs">+{article.tags.length - 3}</Badge>
+                        )}
+                      </div>
+                      <div className="flex items-center justify-between border-t border-border pt-4 text-sm font-medium text-blue-600">
+                        <span>Ler conteúdo</span>
+                        <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <Card className="border-dashed border-2">
+            <CardContent className="py-12 text-center">
+              <div className="space-y-4">
+                <div className="text-4xl text-muted-foreground/30">📝</div>
+                <div>
+                  <p className="text-lg font-semibold text-foreground mb-2">Conteúdo em preparação</p>
+                  <p className="text-muted-foreground">
+                    Os artigos e as discussões serão apresentados aqui quando forem cadastrados.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
       </section>
     </div>
   );

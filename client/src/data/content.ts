@@ -65,6 +65,22 @@ export interface Project {
   isFeatured: boolean;
 }
 
+export interface Article {
+  id: string;
+  title: string;
+  summary: string;
+  category: string;
+  type: "article" | "discussion";
+  date?: string;
+  author?: string;
+  readingTime?: string;
+  tags: string[];
+  content: string[];
+  keyPoints?: string[];
+  references?: { title: string; url?: string }[];
+  externalUrl?: string;
+}
+
 // ============================================
 // EDUCATION DATA
 // ============================================
@@ -429,3 +445,32 @@ export const professionalPhilosophy = {
     "Compartilhamento de conhecimento com colegas",
   ],
 };
+
+// ============================================
+// ARTICLES AND TECHNICAL DISCUSSIONS DATA
+// ============================================
+
+export const articlesData: Article[] = [
+  {
+    id: "apis-e-regras-de-negocio",
+    title: "APIs além dos endpoints: regras de negócio e manutenção",
+    summary:
+      "Reflexão sobre organização de APIs, responsabilidades bem definidas e manutenção de sistemas ao longo do tempo.",
+    category: "Arquitetura de software",
+    type: "discussion",
+    readingTime: "3 min",
+    tags: ["APIs REST", "Arquitetura", "Manutenção"],
+    content: [
+      "Uma API não deve ser pensada apenas como um conjunto de endpoints. Ela representa uma fronteira entre sistemas e precisa comunicar operações, validar solicitações e aplicar regras de negócio de maneira previsível.",
+      "Quando a lógica fica concentrada nos controladores ou repetida em diferentes rotas, mudanças simples podem gerar comportamentos divergentes. Separar responsabilidades — por exemplo, entrada HTTP, lógica de negócio e acesso a dados — ajuda a manter o código compreensível e testável.",
+      "A arquitetura ideal depende do porte e das necessidades do projeto. O objetivo não é adicionar camadas por convenção, mas manter cada responsabilidade em um lugar claro, com dependências explícitas e testes que protejam os comportamentos importantes.",
+      "Uma API sustentável combina contratos claros, tratamento de erros consistente, documentação atualizada e decisões arquiteturais proporcionais à complexidade real do sistema."
+    ],
+    keyPoints: [
+      "Tratar endpoints como contratos entre sistemas.",
+      "Evitar duplicação de regras de negócio.",
+      "Separar responsabilidades de acordo com a complexidade do projeto.",
+      "Documentar e testar os comportamentos relevantes da API."
+    ]
+  },
+];

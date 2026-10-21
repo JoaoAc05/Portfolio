@@ -18,6 +18,7 @@ import Contato from "./pages/contato.tsx";
  * Routes:
  * - / : Home page with introduction and featured projects
  * - /formacao : Education and complementary training
+ * - /artigos/:id : Individual article details (placeholder for future)
  * - /profissional : Professional experience and philosophy
  * - /projetos : All projects listing
  * - /projetos/:id : Individual project details
@@ -29,6 +30,7 @@ function Router() {
       <Switch>
         <Route path={"/"} component={Home} />
         <Route path={"/formacao"} component={Formacao} />
+        <Route path={"/artigos/:id"} component={ProjetoDetalhes} />
         <Route path={"/profissional"} component={Profissional} />
         <Route path={"/projetos"} component={Projetos} />
         <Route path={"/projetos/:id"} component={ProjetoDetalhes} />
