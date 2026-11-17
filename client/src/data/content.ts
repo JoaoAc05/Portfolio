@@ -534,4 +534,35 @@ export const articlesData: Article[] = [
       }      
     ],
   },
+  {
+    id: "art-002",
+    title: "Inovação incremental: o valor de melhorar o que já existe",
+    summary:
+      "Nem toda inovação começa do zero. Melhorar uma interface, reorganizar um processo ou aperfeiçoar uma funcionalidade pode representar inovação quando a mudança é efetivamente implementada e gera valor.",
+    category: "Inovação",
+    type: "discussion",
+    author: "João Alves Cordeiro",
+    readingTime: "10 min",
+    tags: [
+      "Análise de Processos",
+      "Regra de Negócios",
+      "Inovação Incremental"
+    ],
+    content: [
+      "Em Desenvolvimento"      
+    ],
+    keyPoints: [
+      "Em Desenvolvimento."
+    ],
+    references: [
+      // {
+      //   title: "Vídeo: Safe Source",
+      //   url: "https://www.youtube.com/watch?v=cbloz65iVVM"
+      // },
+      // {
+      //   title: "Publicação no LinkedIn",
+      //   url: "https://www.linkedin.com/posts/joao-a-cordeiro_c-padr%C3%A3o-kernighan-ritchie-%C3%A9-a-linguagem-share-7506677296770994176-0bNC/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7506677298197266432&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAESiyzoBgCtlZzPFYF2FWyUxsSmmHfGmvF4"
+      // }      
+    ],
+  },
 ];
