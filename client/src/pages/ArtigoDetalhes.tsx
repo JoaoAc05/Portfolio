@@ -92,7 +92,7 @@ export default function ArtigoDetalhes() {
           <div className="grid lg:grid-cols-[minmax(0,1fr)_280px] gap-12 items-start">
             <div className="max-w-3xl space-y-6">
               {article.content.map((paragraph, index) => (
-                <p key={index} className="text-base md:text-lg text-muted-foreground leading-8">
+                <p key={index} className="text-base md:text-x1 text-muted-foreground leading-8">
                   {paragraph}
                 </p>
               ))}
