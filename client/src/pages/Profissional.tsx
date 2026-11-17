@@ -35,8 +35,7 @@ export default function Profissional() {
       <section className="container py-12 md:py-20 space-y-4">
         <h1 className="text-5xl md:text-6xl font-bold">Trajetória Profissional</h1>
         <p className="text-xl text-muted-foreground max-w-2xl">
-          Experiência em desenvolvimento backend, APIs escaláveis e arquitetura de
-          sistemas distribuídos.
+          Experiência em desenvolvimento de sistemas, identificação de melhorias e inovações.
         </p>
       </section>
 
@@ -56,7 +55,7 @@ export default function Profissional() {
                   expandedNonProgramming ? "rotate-180" : ""
                 }`}
               />
-              Trajetória Anterior (Não-Programação)
+              Trajetória Anterior (Não-Tecnologia)
             </CollapsibleTrigger>
             <CollapsibleContent className="mt-6 space-y-4">
               {nonProgrammingExperience.map((exp) => (

@@ -41,21 +41,21 @@ export default function Home() {
                 João A. Cordeiro
               </h1>
               <p className="text-2xl text-blue-600 font-semibold">
-                Backend Engineer | APIs & Database Architecture
+                Desenvolvedor de Software | Tecnologia & Inovação | Agroronegócio
               </p>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              Especializado em desenvolvimento de APIs, arquitetura de
-              sistemas distribuídos e otimização de bancos de dados. Focado em
-              construir soluções técnicas robustas que crescem com o negócio.
+              Atuo no desenvolvimento de sistemas empresariais e soluções tecnológicas, combinando programação, análise de processos e melhoria contínua. Busco compreender problemas reais e transformá-los em soluções práticas, eficientes e alinhadas às necessidades dos usuários e dos negócios.
             </p>
 
             {/* Philosophy Section */}
             <div className="bg-muted/50 border border-border rounded-lg p-6 space-y-3">
               <p className="font-semibold text-foreground">Filosofia de Trabalho</p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Trabalho com foco em organização, colaboração e melhoria contínua, utilizando a tecnologia para desenvolver soluções robustas, eficientes e orientadas às necessidades dos usuários.
+                Acredito que desenvolver software vai além de escrever código. É compreender pessoas, processos e necessidades, identificando oportunidades para melhorar o que já existe ou criar novas soluções.
+                
+                Valorizo a colaboração, a organização e o aprendizado contínuo, buscando aplicar a tecnologia de maneira prática para gerar resultados e promover a inovação.
               </p>
             </div>
 

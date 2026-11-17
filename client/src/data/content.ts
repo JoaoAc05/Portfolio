@@ -90,18 +90,6 @@ export interface Article {
 export const educationData: Education[] = [
   {
     id: "edu-001",
-    startDate: "2023",
-    endDate: "2025",
-    name: "Análise e Desenvolvimento de Sistemas",
-    type: "Tecnólogo",
-    focus: "Engenharia de Software",
-    institution: "Centro Universitário FASIPE",
-    city: "Sinop, MT",
-    description:
-      "Curso superior de tecnologia com foco em desenvolvimento de software, arquitetura de sistemas, engenharia de software, redes e base de robótica.",
-  },
-  {
-    id: "edu-002",
     startDate: "2026",
     endDate: "2027*",
     name: "Propriedade Intelectual e Transferência de Tecnologia para Inovação",
@@ -112,6 +100,18 @@ export const educationData: Education[] = [
     description:
       "Programa de pós-graduação stricto sensu voltado à pesquisa e inovação tecnológica, com foco em propriedade intelectual e transferência de tecnologia.",
   },
+  {
+    id: "edu-002",
+    startDate: "2023",
+    endDate: "2025",
+    name: "Análise e Desenvolvimento de Sistemas",
+    type: "Tecnólogo",
+    focus: "Engenharia de Software",
+    institution: "Centro Universitário FASIPE",
+    city: "Sinop, MT",
+    description:
+      "Curso superior de tecnologia com foco em desenvolvimento de software, arquitetura de sistemas, engenharia de software, redes e base de robótica.",
+  },  
 ];
 
 export const complementaryEducationData: ComplementaryEducation[] = [
@@ -135,7 +135,7 @@ export const professionalExperienceData: ProfessionalExperience[] = [
       start: "Jul 2026",
       end: "Present",
     },
-    role: "Desenvolvedor JR",
+    role: "Desenvolvedor",
     description:
       "Manutenção de sistema ERP voltado ao agronegócio, trabalhando com linguagem Delphi, banco de dados Firebird. Responsável por implementar novas funcionalidades, corrigir bugs e otimizar processos existentes, garantindo a eficiência e confiabilidade do sistema para os usuários finais.",
   },
@@ -399,6 +399,37 @@ export const projectsData: Project[] = [
   },
   {
     id: "proj-004",
+    title: "Class Arena",
+    shortDescription:
+      "Aplicação web local para organizar competições educativas em sala de aula.",
+    description:
+      "Sistema web com funcionamento local, para organização de equipes e atividades seguindo o modelo passa ou repassa, com competição entre as equipes a fim de responder corretamente perguntas relacionadas ao tema da matéria, com funcionalidade de cartas especiais durante as 'batalhas'.",
+    problemSolved:
+      "Resulução de problema existente dentro da sala de aula, com a dificuldade em aplicar este modelo de atividade.",
+    solution:
+      "Sistema de gerenciamento de atividades.",
+    technicalChallenges: [
+      "Importação de arquivo JSON e XLXS para o banco IndexdDB local.",
+      "Controle de site web completamente local, sem necessidade de internet.",
+      "Funcionalidades especiais para melhor didática e interação na aplicação da atividade.",
+    ],
+    learnings: [
+      "Arquitura OFFline e uso do IndexdDB",
+      "Validação de informações do banco IndexdDB",
+      "Tratamento de erros e feedback para usuários",
+    ],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Vite",
+    ],
+    status: "completed",
+    isFeatured: true,
+    repositoryUrl: "https://github.com/JoaoAc05/Class-Arena",
+  },
+  {
+    id: "proj-005",
     title: "SecureAPI Playground",
     shortDescription:
       "Diferentes exemplos de validações, autenticação e tratamento de dados.",
@@ -435,16 +466,16 @@ export const projectsData: Project[] = [
 
 export const professionalPhilosophy = {
   focus:
-    "Arquitetura escalável, performance e confiabilidade. Foco em construir sistemas que crescem com o negócio.",
+    "Desenvolvimento de sistemas e soluções tecnológicas, com foco na análise de processos, identificação de oportunidades de melhoria e aplicação da tecnologia às necessidades dos usuários e negócios.",
   philosophy:
-    "Trabalho com foco em organização, colaboração e melhoria contínua, utilizando a tecnologia para desenvolver soluções robustas, eficientes e orientadas às necessidades dos usuários.",
+    "Acredito que desenvolver software vai além de escrever código. É compreender pessoas, processos e necessidades, identificando oportunidades para melhorar o que já existe ou criar novas soluções.\n\n Valorizo a colaboração, a organização e o aprendizado contínuo, buscando aplicar a tecnologia de maneira prática para gerar resultados e promover a inovação.",
   strengths: [
-    "Desenvolvimento backend e APIs escaláveis",
+    "Análise de processos e regras de negócio",
     "Aprendizado constante e adaptação a novas tecnologias",
-    "Resolução de problemas complexos e otimização de sistemas",
+    "Desenvolvimento e melhoria de sistemas",
     "Colaboração em equipes multidisciplinares e comunicação clara",
-    "Regra de negócio e visão de produto para soluções técnicas",
-    "Compartilhamento de conhecimento com colegas",
+    "Identificação de problemas e oportunidades",
+    "Compartilhamento de conhecimento",
   ],
 };
 
