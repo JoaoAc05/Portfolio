@@ -195,22 +195,22 @@ export const technologiesData: Technology[] = [
   // Backend
   {
     id: "tech-001",
+    name: "Delphi",
+    category: "backend",
+    icon: "⚔️",
+  },
+  {
+    id: "tech-002",
     name: "Node.js",
     category: "backend",
     icon: "⚙️",
   },
   {
-    id: "tech-002",
+    id: "tech-003",
     name: "Express.js",
     category: "backend",
     icon: "🚀",
-  },
-  //   {
-  //     id: "tech-003",
-  //     name: "python",
-  //     category: "backend",
-  //     icon: "🐍",
-  //   },
+  },    
   //   {
   //     id: "tech-004",
   //     name: "FastAPI",
@@ -502,18 +502,31 @@ export const articlesData: Article[] = [
     ],
     content: [
       "O avanço das ferramentas de inteligência artificial aplicadas à programação levanta uma questão interessante: e se o futuro do desenvolvimento de software não estiver apenas em linguagens cada vez mais abstratas, mas também em um retorno às linguagens de baixo nível, como C e Assembly? Essa possibilidade discutida no vídeo do canal Safe Source foi o ponto de partida para esta reflexão.",
+
       "Por que uma linguagem de baixo nível?",
+
       "A ideia de utilizar linguagens de baixo nível para melhorar o processamento, reduzir o consumo de recursos e otimizar o armazenamento é bastante interessante. A linguagem C, especialmente em sua abordagem clássica associada a Kernighan e Ritchie, oferece controle sobre os recursos da máquina e proximidade com o funcionamento do hardware. Assembly, por sua vez, permite um controle ainda mais específico, embora possa aumentar consideravelmente a complexidade do desenvolvimento e da manutenção.",
+
       "Entretanto, acredito que uma eventual retomada dessas linguagens não significaria simplesmente abandonar as tecnologias atuais. Outro ponto importante é a modernização dos sistemas legados. Um exemplo é o uso do COBOL em sistemas corporativos e bancários, nos quais aplicações antigas continuam desempenhando funções essenciais. A permanência dessas tecnologias não ocorre necessariamente porque sejam as melhores opções para qualquer novo projeto, mas porque acumulam regras de negócio, integrações e dependências que precisam continuar funcionando corretamente.",
+
       "A inteligência artificial pode contribuir para analisar código legado, documentar funcionalidades, identificar dependências e automatizar parte das migrações. Ainda assim, acelerar a produção de código não elimina o trabalho de validação, os testes de regressão e a necessidade de garantir que o novo sistema preserve as regras de negócio. Por isso, mesmo que a modernização se torne mais rápida, não considero inevitável uma migração generalizada no curto prazo.",
+
       "Apesar dessas possibilidades, existe uma questão que considero fundamental: a qualidade do código gerado por IA. Na minha experiência com essas ferramentas, percebo que nem sempre a primeira solução apresentada é a mais adequada (quase nunca na verdade). Em muitos casos, o código funciona, mas poderia ser mais simples, eficiente, seguro ou coerente com a arquitetura do projeto.",
+
       "Existe uma diferença entre produzir código que atende a um requisito imediato e desenvolver uma solução sustentável. Um programa pode entregar o resultado esperado e, ainda assim, apresentar consumo desnecessário de recursos, complexidade excessiva, tratamento inadequado de erros ou dificuldades para manutenção e evolução.",
+
       "Se tratando de grandes sistemas a eficiência também não deve ser avaliada apenas pela velocidade de execução. Consumo de memória, escalabilidade, segurança, legibilidade e custo de manutenção precisam ser considerados de acordo com o contexto. Da mesma forma, migrar um programa para C ou Assembly não garante, por si só, que ele será mais eficiente: a qualidade da implementação, os algoritmos utilizados e as características da aplicação continuam sendo determinantes.",
+
       "Por isso, vejo a inteligência artificial como uma ferramenta capaz de ampliar a produtividade, mas cujos resultados precisam ser avaliados criticamente. O desenvolvedor continua responsável por compreender o problema, revisar as decisões técnicas, testar o comportamento e verificar se a solução realmente atende aos requisitos.",
+
       "Acredito que os modelos de IA ainda podem evoluir significativamente na geração de código, na compreensão de arquiteturas e na identificação de oportunidades de otimização. É possível imaginar ferramentas capazes de analisar diferentes implementações, comparar seu desempenho e selecionar alternativas mais adequadas para cada cenário.",
+
       "Mesmo assim, ainda não considero seguro presumir que essa evolução eliminará a necessidade de supervisão humana. Quanto mais crítico for o sistema, maior será a importância de demonstrar que ele funciona corretamente, protege os dados, atende aos requisitos e se comporta de maneira previsível. Em aplicações financeiras, industriais, médicas ou de infraestrutura, um erro pode produzir consequências que vão muito além de uma falha de programação.",
+
       "Avanços em áreas como computação quântica e criptografia pós-quântica também reforçam a importância de acompanhar as mudanças tecnológicas com rigor. Embora esses campos apresentem desafios próprios e não determinem diretamente o futuro da geração de código, eles mostram que a evolução da computação exige conhecimento especializado, avaliação de riscos e atualização constante.",
+
       "Talvez, no futuro, a supervisão se torne menos manual e mais automatizada, com agentes capazes de executar testes, verificar propriedades do código, analisar vulnerabilidades e monitorar o comportamento de sistemas. Ainda assim, automatizar verificações não é o mesmo que eliminar a responsabilidade técnica. Será necessário definir critérios de aceitação, avaliar situações excepcionais e decidir quais riscos são aceitáveis.",
+
       "Para mim, o principal desafio não é escolher entre programar manualmente ou utilizar inteligência artificial, tampouco decidir antecipadamente qual linguagem dominará o futuro. O desafio está em compreender suficientemente os fundamentos da computação para avaliar as soluções produzidas por essas ferramentas."      
     ],
     keyPoints: [
@@ -549,20 +562,64 @@ export const articlesData: Article[] = [
       "Inovação Incremental"
     ],
     content: [
-      "Em Desenvolvimento"      
+      "Quando falamos de inovação, geralmente a primeira coisa que nos vem à cabeça são aquelas tecnologias consideradas revolucionárias, como a Inteligência Artificial, robôs autônomos trabalhando nas indústrias, carros que dirigem sozinhos ou carros com propulsores de ar comprimido capazes de 'voar' e tantas outras invenções que parecem ter saído de um filme de ficção científica.",
+
+      "Mas será que toda inovação precisa ser algo tão grandioso e diferente?",
+
+      "Imagine uma equipe de atendimento ao cliente responsável por auxiliar usuários na utilização de um sistema. Para realizar um bom atendimento, essa equipe precisa ter acesso a inúmeras informações: conhecer o cadastro do cliente, entender sua área de atuação, compreender o funcionamento do sistema e, dependendo da dúvida apresentada, possuir conhecimentos sobre sistemas operacionais, redes de computadores e outras tecnologias.",
+
+      "Resumidamente, são muitos conhecimentos necessários para que o atendimento seja realizado de maneira rápida e assertiva. E, naturalmente, nem tudo ficará memorizado. Por isso, é importante que existam meios de consultar informações sempre que necessário.",
+      "O problema começa quando cada tipo de informação está disperso em um lugar diferente. O atendente precisa consultar uma ferramenta para encontrar os dados do cliente, outra para buscar orientações técnicas e talvez uma terceira para verificar procedimentos internos. Dependendo da situação, ele pode passar mais tempo procurando informações do que efetivamente auxiliando o cliente a resolver seu problema.",
+
+      "Agora imagine que essas informações sejam organizadas e centralizadas em um único ambiente, permitindo que a equipe encontre aquilo de que precisa com muito mais facilidade. Pode parecer uma mudança simples, mas essa reorganização tem potencial para melhorar significativamente o processo de atendimento. O tempo gasto na busca por informações pode diminuir, a equipe consegue trabalhar de maneira mais organizada e, consequentemente, o cliente também pode receber uma resposta mais rapidamente.",
+      
+      "Perceba que não foi necessário inventar uma nova tecnologia ou desenvolver um sistema revolucionário. A melhoria surgiu da identificação de um problema que já existia dentro de um processo. É justamente nesse tipo de situação que podemos encontrar oportunidades de inovação que, muitas vezes, passam despercebidas.",
+
+      "O que é inovação incremental?",
+
+      "A inovação não está totalmente atrelada à criação de novas tecnologias. Ela também pode acontecer por meio de melhorias em processos, produtos, serviços e na maneira como uma organização realiza suas atividades. Pode ser uma nova organização das informações que facilite o trabalho de uma equipe, a automatização de uma tarefa repetitiva, a criação de um indicador que permita compreender melhor os resultados da empresa ou o aperfeiçoamento de uma funcionalidade que já existe. O interessante é que essas melhorias não precisam começar do zero. Muitas vezes, a estrutura já está funcionando, os recursos estão disponíveis e o processo já é conhecido. O que falta é identificar uma maneira melhor de utilizá-los.",
+
+      "É nesse contexto que encontramos a inovação incremental, caracterizada pelo aperfeiçoamento progressivo de produtos, serviços ou processos existentes. Isso não significa, porém, que qualquer alteração seja automaticamente uma inovação. Para que uma melhoria possa ser considerada inovadora, é importante observar se ela representa uma mudança significativa em relação ao que existia anteriormente e se foi efetivamente colocada em uso.",
+
+      "Por outro lado, também temos as inovações radicais, que envolvem mudanças muito mais profundas em relação às soluções existentes. Podemos pensar, por exemplo, em pesquisas científicas voltadas ao desenvolvimento de substâncias que auxiliam no tratamento de pessoas sem as funções motoras (paraplégicos), em novas tecnologias para o tratamento de diabets com substâncias agonistas aos receptores dos hormônios intestinais ou no desenvolvimento de aeronaves completamente elétricas capazes de transportar passageiros. São iniciativas que podem exigir anos de pesquisa, experimentação, investimentos e aprimoramento, especialmente quando envolvem tecnologias ainda pouco exploradas.",
+
+      "Mas isso não significa que a inovação incremental tenha menos importância. Enquanto algumas inovações procuram transformar completamente a maneira como fazemos determinada atividade, outras buscam aperfeiçoar aquilo que já utilizamos diariamente. E ambas podem contribuir para o desenvolvimento tecnológico e para a melhoria da sociedade.",
+
+      "Onde a inovação incremental aparece no software?",
+
+      "No desenvolvimento de software, as oportunidades de inovação podem surgir de diferentes maneiras. Imagine um processo que exige que o usuário acesse várias telas, preencha informações repetidas e execute diversas etapas até conseguir concluir uma atividade. Uma possibilidade de melhoria seria reorganizar esse fluxo, permitindo que parte das informações seja preenchida automaticamente e que as ações sejam centralizadas em uma ou duas telas. O objetivo continua sendo o mesmo, mas o caminho percorrido pelo usuário se torna mais simples.",
+
+      "Outro exemplo está na apresentação das informações. Uma tela ou relatório pode conter todos os dados necessários e, ainda assim, ser difícil de compreender. Informações importantes podem estar pouco destacadas, campos podem estar distribuídos de maneira confusa e determinadas ações podem exigir mais atenção do que deveriam. Nesses casos, uma reorganização da interface pode contribuir para que o usuário encontre as informações com mais facilidade e compreenda melhor o que está sendo apresentado.",
+
+      "Também podemos observar esse movimento com a incorporação de recursos de Inteligência Artificial aos sistemas. Funcionalidades que antes dependiam de várias ações manuais podem passar a contar com recursos de classificação, sugestões automáticas, interpretação de informações e apoio à execução de determinadas tarefas.",
+
+      "Entretanto, a utilização de uma tecnologia mais recente não garante, por si só, que a solução será melhor. Antes de implementar qualquer mudança, é necessário compreender o funcionamento da ferramenta, conhecer o processo realizado pelo cliente e avaliar se a solução realmente atende à necessidade identificada. Também precisamos considerar se os usuários conseguirão utilizar a nova funcionalidade, se será necessário algum treinamento, quais impactos a alteração poderá causar e se o desenvolvimento é tecnicamente e economicamente viável.",
+
+      "Afinal, não adianta transformar um processo simples em algo tecnologicamente sofisticado se, ao final, ele se tornar mais difícil de utilizar. Por isso, acredito que uma das partes mais importantes do desenvolvimento de software está justamente em compreender o problema antes de escolher a tecnologia que será utilizada para resolvê-lo.",
+
+      "Minha perspectiva: desenvolvimento e pesquisa em inovação",
+
+      "Acredito que a inovação está muito mais próxima da nossa realidade do que costumamos imaginar. Quando conhecemos de fato um processo e compreendemos seu objetivo, começamos a perceber oportunidades de facilitar atividades, automatizar tarefas, organizar informações e melhorar a maneira como o trabalho é realizado.",
+
+      "Minha experiência profissional tem contribuído bastante para essa percepção.",
+
+      "Durante minha atuação no suporte a sistemas, tive contato direto com usuários, suas dúvidas, dificuldades operacionais e diferentes regras de negócio. Essa experiência me ajudou a compreender que, muitas vezes, um problema apresentado como uma dificuldade técnica também está relacionado à organização de um processo. Atualmente, trabalhando com desenvolvimento de software, tenho a oportunidade de observar essas situações por outra perspectiva.",
+
+      "O conhecimento técnico amplia as possibilidades de buscar soluções, seja realizando melhorias em funcionalidades existentes, reorganizando informações de uma interface ou desenvolvendo novos recursos que centralizem ações anteriormente dispersas. Ao mesmo tempo, meus estudos no mestrado em Propriedade Intelectual e Transferência de Tecnologia para Inovação vêm ampliando minha compreensão sobre o assunto. O contato com pesquisas científicas e discussões relacionadas à inovação tem me ajudado a relacionar conceitos acadêmicos com situações que encontro no ambiente profissional.",
+
+      "Ainda tenho muito a aprender, mas essa combinação de experiências vem fortalecendo uma ideia que considero importante: a tecnologia deve ser um meio para resolver problemas, e não o objetivo final de uma solução.",
+
+      "Conclusão: Melhorar também é inovar",
+
+      "Quando pensamos em inovação, não precisamos olhar apenas para as grandes invenções ou para as tecnologias mais recentes. Muitas oportunidades estão presentes nos processos que executamos diariamente, nos sistemas que utilizamos e nas dificuldades que acabamos considerando normais simplesmente porque nos acostumamos com elas. É claro que nem toda alteração será uma inovação. Mas mudanças significativas, implementadas e capazes de gerar valor demonstram como o aperfeiçoamento do que já existe também pode contribuir para a evolução tecnológica.",
+
+      "Para mim, uma das principais lições desse tema é que inovar começa muito antes de escrever código ou escolher uma ferramenta. Começa com a capacidade de observar, questionar, compreender necessidades e identificar oportunidades.",
+
+      "Antes de pensar em criar algo completamente novo, talvez valha a pena fazer uma pergunta mais simples: o que já existe e poderia funcionar melhor?"
     ],
     keyPoints: [
-      "Em Desenvolvimento."
-    ],
-    references: [
-      // {
-      //   title: "Vídeo: Safe Source",
-      //   url: "https://www.youtube.com/watch?v=cbloz65iVVM"
-      // },
-      // {
-      //   title: "Publicação no LinkedIn",
-      //   url: "https://www.linkedin.com/posts/joao-a-cordeiro_c-padr%C3%A3o-kernighan-ritchie-%C3%A9-a-linguagem-share-7506677296770994176-0bNC/?highlightedUpdateUrn=urn%3Ali%3Aactivity%3A7506677298197266432&highlightedUpdateType=SOCIAL_SHARE&origin=SOCIAL_SHARE&utm_source=share&utm_medium=member_desktop&rcm=ACoAAESiyzoBgCtlZzPFYF2FWyUxsSmmHfGmvF4"
-      // }      
+      "Conhecer como a regra de negócio funciona, te permite enxergar com mais facilidade as ações que podem ser facilitadas.",
+      "Inovação pode estar nas dificuldades que acabamos considerando normais simplesmente porque nos acostumamos com elas."
     ],
   },
 ];

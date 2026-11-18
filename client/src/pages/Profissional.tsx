@@ -42,52 +42,6 @@ export default function Profissional() {
       {/* Divider */}
       <div className="border-t border-border" />
 
-      {/* Non-Programming Career (Minimized) */}
-      {nonProgrammingExperience.length > 0 && (
-        <section className="container py-12 md:py-16">
-          <Collapsible
-            open={expandedNonProgramming}
-            onOpenChange={setExpandedNonProgramming}
-          >
-            <CollapsibleTrigger className="flex items-center gap-3 text-lg font-semibold text-muted-foreground hover:text-foreground transition-colors">
-              <ChevronDown
-                className={`w-5 h-5 transition-transform ${
-                  expandedNonProgramming ? "rotate-180" : ""
-                }`}
-              />
-              Trajetória Anterior (Não-Tecnologia)
-            </CollapsibleTrigger>
-            <CollapsibleContent className="mt-6 space-y-4">
-              {nonProgrammingExperience.map((exp) => (
-                <Card key={exp.id} className="border-l-4 border-l-gray-400">
-                  <CardHeader>
-                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                      <div className="flex-1">
-                        <CardTitle>{exp.role}</CardTitle>
-                        <CardDescription className="text-base mt-2">
-                          {exp.company}
-                        </CardDescription>
-                      </div>
-                      <Badge variant="outline" className="whitespace-nowrap">
-                        {exp.period.start} - {exp.period.end}
-                      </Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {exp.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </CollapsibleContent>
-          </Collapsible>
-        </section>
-      )}
-
-      {/* Divider */}
-      <div className="border-t border-border" />
-
       {/* Programming Career (Main Focus) */}
       <section className="container py-20 md:py-32 space-y-12">
         <div className="space-y-2">
@@ -133,6 +87,52 @@ export default function Profissional() {
           ))}
         </div>
       </section>
+
+      {/* Divider */}
+      <div className="border-t border-border" />
+
+      {/* Non-Programming Career (Minimized) */}
+      {nonProgrammingExperience.length > 0 && (
+        <section className="container py-12 md:py-16">
+          <Collapsible
+            open={expandedNonProgramming}
+            onOpenChange={setExpandedNonProgramming}
+          >
+            <CollapsibleTrigger className="flex items-center gap-3 text-lg font-semibold text-muted-foreground hover:text-foreground transition-colors">
+              <ChevronDown
+                className={`w-5 h-5 transition-transform ${
+                  expandedNonProgramming ? "rotate-180" : ""
+                }`}
+              />
+              Trajetória Anterior (Não-Tecnologia)
+            </CollapsibleTrigger>
+            <CollapsibleContent className="mt-6 space-y-4">
+              {nonProgrammingExperience.map((exp) => (
+                <Card key={exp.id} className="border-l-4 border-l-gray-400">
+                  <CardHeader>
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                      <div className="flex-1">
+                        <CardTitle>{exp.role}</CardTitle>
+                        <CardDescription className="text-base mt-2">
+                          {exp.company}
+                        </CardDescription>
+                      </div>
+                      <Badge variant="outline" className="whitespace-nowrap">
+                        {exp.period.start} - {exp.period.end}
+                      </Badge>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {exp.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </CollapsibleContent>
+          </Collapsible>
+        </section>
+      )}
 
       {/* Divider */}
       <div className="border-t border-border" />
